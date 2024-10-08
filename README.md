@@ -2,7 +2,7 @@
 
 This project was completed in 3h and 10 minutes as part of a technical test for MentorAI
 
-## Description
+## Subject
 
 - Backend (Django): Creates an API endpoint that allows you to create books. Each book must have the following fields: title, author, and year of publication. We will use Django REST Framework for the API.
 
