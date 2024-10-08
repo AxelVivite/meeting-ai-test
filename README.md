@@ -26,6 +26,7 @@ python manage.py createsuperuser --username admin --email admin@example.com
 In the frontend folder:
 ```
 npm install
+cp .env.example .env
 ```
 
 ### Executing programs
