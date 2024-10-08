@@ -1,6 +1,6 @@
 # MeetorAI Test
 
-This project was completed in two hours as part of a technical test for MentorAI
+This project was completed in 3h and 10 minutes as part of a technical test for MentorAI
 
 ## Description
 
