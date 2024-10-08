@@ -1,3 +1,9 @@
+## Django
+venv/
+__pycache__/
+db.sqlite3
+
+## React
 # Logs
 logs
 *.log
