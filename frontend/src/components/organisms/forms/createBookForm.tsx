@@ -14,7 +14,7 @@ const CreateBookForm: React.FC = () => {
   let initialValues: Book = {
     title: "",
     author: "",
-    year_of_publication: undefined,
+    year_of_publication: new Date().getFullYear(),
   };
 
   const validationSchema = Yup.object({
@@ -37,7 +37,6 @@ const CreateBookForm: React.FC = () => {
     const backendUrl = import.meta.env.VITE_BACKEND_URL ?? "http://localhost:8000";
 
     try {
-      console.log(backendUrl + 'api/books/');
       const response = await fetch(backendUrl + 'api/books/', {
         method: 'POST',
         headers: {
@@ -46,16 +45,13 @@ const CreateBookForm: React.FC = () => {
         body: JSON.stringify(values),
       });
 
-      console.log(response);
-
       if (response.ok) {
         resetForm();
-        toastSuccess("Message sent successfully!");
+        toastSuccess("Book added successfully!");
       } else {
         toastError("Something went wrong, please try again.");
       }
     } catch (error) {
-      console.error(error);
       toastError("Something went wrong, please try again.");
     }
   };
