@@ -14,8 +14,7 @@ This project was completed in two hours as part of a technical test for MentorAI
 
 Clone the project on your computer.
 
-At the project root:
-
+In the backend folder:
 ```
 python3 -m venv venv
 source venv/bin/activate
@@ -24,21 +23,18 @@ python manage.py migrate
 ```
 
 In the frontend folder:
-
 ```
 npm install
 ```
 
 ### Executing programs
 
-With venv running at root:
-
+With venv running in the backend folder:
 ```
 python manage.py runserver
 ```
 
 In the frontend folder:
-
 ```
 npm run build
 npm run preview
